@@ -45,15 +45,19 @@ $ git config --global core.editor
 $ git config --list [lista as informações cadastradas de assinatura do repositório]
 $ git config --global --remove-section user[deleta a informção inserida errada]
 
+$ cd .git [entra na pasta do git]
+$ cd .. [retorna a pasta anterior]
 
 GitHub
 
 [] Repositório remoto
 
 ##Comandos utilizados
-$ ls -a [mostra arquivos da pasta]
+$ ls -a [mostra arquivos da pasta incluindo ocultos]
 $ git --help [informações sobre comandos existentes no git]
 $ git init [cria um Repositório ou reinicializa um existentes]
 $ git status [mostra situação da pasta git]
 $ git add info.txt [add o arquivo no staging]
 $ git config --list [lista as informações cadastradas de assinatura do repositório]
+$ git commit -m "" [commit tradicional]
+$ git log [mostra a situação dos commits realizados]
