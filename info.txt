@@ -1,0 +1,59 @@
+Versionamento
+
+Problema sobre o desenvolvimento individual
+
+[] Falta de capacidade de retornar as versões anteriores
+[] Versão não monitorada
+[] Longo período em busca de solução
+
+Problema relacionado a trabalhar com equipe
+
+[] Conflitos quando mais de um programador esta trabalhando no mesmo arquivo
+[] Bloqueio do arquivo no desenvolvimento individual
+[] Refação desnecessária
+
+Solução - Monitoramento das alterações dos arquivos
+
+
+GIT
+
+[] Diferente porque tira uma 'foto'instantâneo do status do arquivo
+[] Armazena uma referência do arquivo
+[] Se um arquivo não teve alterações não registra
+[] Fluxo de momentos d projeto
+[] Maioria das ações são locais
+[] Integridade, todas as ações são registradas.
+[] String de 40 posições que usa hexadecimal (0-9 a-f)
+[] Armazena dados
+[] Repositório local
++++++++++++++++++++++++++++++++++++++++++++++
+
+Principal a ser lembrado
+
+[] 1. Diretório de trabalho (pasta na sua máquina local)
+[] 2. Repositório git
+[] .git : Banco de dados compactado com as alterações dos arquivos
+[] Staging: Area de preparação
+[] Compromisso: commit
+
+Modificar o arquivo > adiciona ao Staging > comprometer o arquivo : commit
+
+informações da sua identidade:
+$ git config --global user.name
+$ git config --global user.email
+$ git config --global core.editor
+$ git config --list [lista as informações cadastradas de assinatura do repositório]
+$ git config --global --remove-section user[deleta a informção inserida errada]
+
+
+GitHub
+
+[] Repositório remoto
+
+##Comandos utilizados
+$ ls -a [mostra arquivos da pasta]
+$ git --help [informações sobre comandos existentes no git]
+$ git init [cria um Repositório ou reinicializa um existentes]
+$ git status [mostra situação da pasta git]
+$ git add info.txt [add o arquivo no staging]
+$ git config --list [lista as informações cadastradas de assinatura do repositório]
