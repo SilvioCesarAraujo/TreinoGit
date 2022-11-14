@@ -148,3 +148,11 @@ git show tag
 
 erro critico - hotfix
 git checkout -b hotfix/1.0.0-1
+
+
+Para instalar o git flow, basta executar o comando sudo apt install git-flow 
+p atualizar o sistema sudo dpkg --configure -a
+Por meio do comando git flow version, é possível verificar a versão da ferramenta.
+Utilize o comando git flow init para inicializar o git flow.
+git flow feature start _campo_nome (cria branch)
+git flow feature finish _campo_nome (faz o merge e exclui entrando na branch dev)
