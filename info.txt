@@ -1,0 +1,124 @@
+Versionamento
+
+Problema sobre o desenvolvimento individual
+
+[] Falta de capacidade de retornar as versões anteriores
+[] Versão não monitorada
+[] Longo período em busca de solução
+
+Problema relacionado a trabalhar com equipe
+
+[] Conflitos quando mais de um programador esta trabalhando no mesmo arquivo
+[] Bloqueio do arquivo no desenvolvimento individual
+[] Refação desnecessária
+
+Solução - Monitoramento das alterações dos arquivos
+
+
+GIT
+
+[] Diferente porque tira uma 'foto'instantâneo do status do arquivo
+[] Armazena uma referência do arquivo
+[] Se um arquivo não teve alterações não registra
+[] Fluxo de momentos d projeto
+[] Maioria das ações são locais
+[] Integridade, todas as ações são registradas.
+[] String de 40 posições que usa hexadecimal (0-9 a-f)
+[] Armazena dados
+[] Repositório local
++++++++++++++++++++++++++++++++++++++++++++++
+
+Principal a ser lembrado
+
+[] 1. Diretório de trabalho (pasta na sua máquina local)
+[] 2. Repositório git
+[] .git : Banco de dados compactado com as alterações dos arquivos
+[] Staging: Area de preparação
+[] Compromisso: commit
+
+Modificar o arquivo > adiciona ao Staging > comprometer o arquivo : commit
+
+informações da sua identidade:
+$ git config --global user.name
+$ git config --global user.email
+$ git config --global core.editor
+$ git config --list [lista as informações cadastradas de assinatura do repositório]
+$ git config --global --remove-section user[deleta a informção inserida errada]
+
+$ cd .git [entra na pasta do git]
+$ cd .. [retorna a pasta anterior]
+
+GitHub
+
+[] Repositório remoto
+
+##Comandos utilizados
+$ ls -a [mostra arquivos da pasta incluindo ocultos]
+$ git --help [informações sobre comandos existentes no git]
+$ git init [cria um Repositório ou reinicializa um existentes]
+$ git status [mostra situação da pasta git]
+$ git add info.txt [add o arquivo no staging]
+$ git add -A [manda todos os arquivos]
+$ git config --list [lista as informações cadastradas de assinatura do repositório]
+$ git commit -m "" [commit tradicional]
+$ git log [mostra a situação dos commits realizados]
+
+reset (reverter)
+
+HEAD > commit (sempre relacionado ao commit)
+index > Stage
+Working Tree > diretório
+
+reset tem subcomandos:
+--hard : desfazer commit, desfaz o stage altera o diretório
+--mixed: desfazer commit, desfaz o stage sem alteração no arquivo fixo
+--soft: desfazer o commit, mantendo o stage e o arquivo fisico
+Após utilizar as informações acima, finalizar o comando com a hash do commit
+
+.gitignore
+  arquivos são ignorados com o nome especifico ou .extensao
+se arquivo começar com # tem que colocar \#
+
+git restore --staged e a pasta
+
+git diff verifica a diferença entre o ultimo commit com as ultimas informações digitadas
+git diff hash1 hash2
+git diff arquivoespecifico
+gif diff --no-prefix arquivoespecifico
+
+branch
+
+git branch (verifica branchs existentes)
+git branch nomedabranch(cria nova branch)
+git checkout nomedabranch (troca a branch)
+git diff HEAD nomedabranchacomparar
+
+git log -1 mais recente commit
+git log -2 dois ultimos
+git log -p -1 mais recente com as informações
+git log -1 --stat estatistica
+git log -1 --stat --pretty=online 
+git log -1 --stat --pretty=format:"%s"
+git log -1 --stat --pretty=format:"%an,%ar,%s"
+git log -1 --stat --pretty=format:"%an,%ar,%s,%h"
+git log -1 --stat --pretty=format:"%an - %ar,m: %s,commit: %h"
+git log -p -1 --stat --pretty=format:"%an - %ar,m: %s,commit: %h"
+
+git rm nomedoarquivo ( remove o arquivo )
+
+
+git clone caminhohttpsdorepositorio (clonar um repositório)
+git branch -m nomedabranch(altera o nome da branch)
+git push origin --delete nomedabranch (deleta a branch no remoto)
+git branch -r (verificando branchs no remoto)
+git checkout origin/projeto(faz checkout no branch remoto muda o head)
+
+#Criando uma branch no remoto
+estando na branch
+git push origin nomedabranch
+
+git push origin HEAD:nomedabranch (atualiza apenas a branch)
+
+
+# cloando o repositório de outra pessoa, tem que ser via fork
+depois no seu repositorio você faz a clonagem

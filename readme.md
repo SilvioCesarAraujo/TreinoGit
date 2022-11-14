@@ -1,0 +1,51 @@
+# Projeto - Lógica com Javascript
+![GitHub forks](https://img.shields.io/github/forks/silviodearaujo/TreinoGit?style=social)
+
+![GitHub](data:image/png;base64,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 "Javascript")
+## Feito o primeiro commit com GitHub.
+
+funções do sites:
+
+---
+
+### Sobre o projeto
+Projeto para testar o uso o github
+- Clonando o repositório remoto;
+- Criada a branch projeto_v2;
+- Projeto iniciado!
+
+---
+
+## Testando processos
+
+### literals
+`CTRL + SHIFT + C`
+
+### Cods
+
+```javascript
+//Jogo dos palpites
+sorteio() //gera número aleatório
+palpites(50) //gera as mensagens de quanto se está perto do número
+
+//calculo soma op=1 subtracao op=2
+calculo(op,n1,n2,mensagem)
+
+//mensagem para o usuário
+alert(mensagem)
+```
+
+--- 
+
+## Contribua com o projeto:
+PR são incentivados. Por favor não deixe de contribuir com a sua
+idéia [aqui](https://github.com/silviodearaujo/TreinoGit/issues/new/choose)!
+
+---
+
+## Licença
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
+## Créditos
+
+[Silvio de Araujo](https://github.com/silviodearaujo/TreinoGit)
