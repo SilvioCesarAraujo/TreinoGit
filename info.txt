@@ -142,3 +142,6 @@ master 1.0.0 | 1.0.1 | 1.0.2
 
 git merge nomedabranch (tem que estar na branch ao qual deseja receber as informações da outra)
 git tag versão (tagar com o número da versão e release)
+para verificar a tag tem que enviar:
+git push origin 1.0.0 (número da tag)
+git show tag
