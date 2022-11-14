@@ -114,3 +114,5 @@ git branch -r (verificando branchs no remoto)
 git checkout origin/projeto(faz checkout no branch remoto muda o head)
 
 #Criando uma branch no remoto
+estando na branch
+git push origin nomedabranch
