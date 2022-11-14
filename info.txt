@@ -116,3 +116,9 @@ git checkout origin/projeto(faz checkout no branch remoto muda o head)
 #Criando uma branch no remoto
 estando na branch
 git push origin nomedabranch
+
+git push origin HEAD:nomedabranch (atualiza apenas a branch)
+
+
+# cloando o repositório de outra pessoa, tem que ser via fork
+depois no seu repositorio você faz a clonagem
