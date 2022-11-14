@@ -122,3 +122,18 @@ git push origin HEAD:nomedabranch (atualiza apenas a branch)
 
 # cloando o repositório de outra pessoa, tem que ser via fork
 depois no seu repositorio você faz a clonagem
+
+
+# Git Flow
+ [] master (main): projeto
+        [] hotfix : correções imediatas, falhas criticas : temporária versão 1.0.0-1 Tag
+    [] dev (desenvolvimento)
+        [] feature (funcionalidades) : temporária
+        [] release (lançamento) : temporária veresão 1.0.0 Tag
+
+
+++++++++++++++++++++++++
+master 1.0.0 | 1.0.1 | 1.0.2
+        hotfix 1.0.1-1 | hotfix 1.0.1-2 Tag
+    dev
+        release > features XXX Tag
